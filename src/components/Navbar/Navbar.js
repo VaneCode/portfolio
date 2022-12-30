@@ -1,12 +1,13 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { HashLink } from 'react-router-hash-link';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Home', href: '#home-section', current: true },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'About', href: '#about-section', current: false },
+  { name: 'Contact', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -47,7 +48,7 @@ const Navbar = () => {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <HashLink
                         key={item.name}
                         href={item.href}
                         className={classNames(
@@ -57,7 +58,7 @@ const Navbar = () => {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </HashLink>
                     ))}
                   </div>
                 </div>
