@@ -6,9 +6,9 @@ import { HashLink } from "react-router-hash-link";
 
 const navigation = [
   { name: "Home", href: "#home-section", current: true },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects", href: "#projects-section", current: false },
   { name: "About", href: "#about-section", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact", href: "#contact-section", current: false },
 ];
 
 function classNames(...classes) {
