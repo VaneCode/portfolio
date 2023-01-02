@@ -91,7 +91,9 @@ const Navbar = () => (
                     <Menu.Item>
                       {({ active }) => (
                         <a
-                          href="ttps://www.linkedin.com/in/vanessa-bonito-narvaez/"
+                          href="https://www.linkedin.com/in/vanessa-bonito-narvaez/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className={classNames(
                             active ? "bg-gray-100" : "",
                             "block px-4 py-2 text-sm text-gray-700",
@@ -105,6 +107,8 @@ const Navbar = () => (
                       {({ active }) => (
                         <a
                           href="https://github.com/VaneCode"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className={classNames(
                             active ? "bg-gray-100" : "",
                             "block px-4 py-2 text-sm text-gray-700",
