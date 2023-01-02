@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const Headline = () => (
+const Home = () => (
   <section id="home-section" className="headline-section">
     <div className="headline-description">
       <div className="item-1">
@@ -22,4 +22,4 @@ const Headline = () => (
   </section>
 );
 
-export default Headline;
+export default Home;
