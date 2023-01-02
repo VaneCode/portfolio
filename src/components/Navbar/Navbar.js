@@ -55,7 +55,7 @@ const Navbar = () => (
                         item.current
                           ? "bg-gray-900 text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "px-3 py-2 rounded-md text-sm font-medium"
+                        "px-3 py-2 rounded-md text-sm font-medium",
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -91,39 +91,39 @@ const Navbar = () => (
                     <Menu.Item>
                       {({ active }) => (
                         <a
-                          href="#"
+                          href="ttps://www.linkedin.com/in/vanessa-bonito-narvaez/"
                           className={classNames(
                             active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
+                            "block px-4 py-2 text-sm text-gray-700",
                           )}
                         >
-                          Your Profile
+                          Linkedin
                         </a>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
                         <a
-                          href="#"
+                          href="https://github.com/VaneCode"
                           className={classNames(
                             active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
+                            "block px-4 py-2 text-sm text-gray-700",
                           )}
                         >
-                          Settings
+                          Github
                         </a>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
                         <a
-                          href="#"
+                          href="https://medium.com/@vanessabonitonarvaez"
                           className={classNames(
                             active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
+                            "block px-4 py-2 text-sm text-gray-700",
                           )}
                         >
-                          Sign out
+                          Medium
                         </a>
                       )}
                     </Menu.Item>
@@ -145,7 +145,7 @@ const Navbar = () => (
                   item.current
                     ? "bg-gray-900 text-white"
                     : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                  "block px-3 py-2 rounded-md text-base font-medium"
+                  "block px-3 py-2 rounded-md text-base font-medium",
                 )}
                 aria-current={item.current ? "page" : undefined}
               >
